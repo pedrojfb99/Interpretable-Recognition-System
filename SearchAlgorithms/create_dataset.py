@@ -5,6 +5,12 @@ from random import randrange
 import time
 #Importamos a funçãodo A estrela
 from A_star import call_a_star
+import tensorflow
+
+
+
+
+
 
 # Resultados : [(x,y,label),...,..]
 results = []
