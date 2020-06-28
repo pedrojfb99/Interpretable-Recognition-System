@@ -109,9 +109,7 @@ In summary, the choice is never a choice of convenience.
 # TODO
 
 - Explicar iomplementação dos modelos (discriminador / gerador) 
-- Fazer diagrama CGAN !
-- Experiencias c45 e MLP ! 
-- RELU vs LeakyRELU
-- ADAM vs RMSDrop
+- RELU vs LeakyRELU A fazer
+- ADAM vs RMSDrop A fazer 
 - Introducao
 - Acabar artiifiaal netowrks teorica
