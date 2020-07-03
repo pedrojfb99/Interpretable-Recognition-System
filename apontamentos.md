@@ -71,45 +71,18 @@ LR2 = 0.0001
 
 
 
-## LeakyReLU vs ReLU
 
 
-
-
-
-Combining ReLU, the hyper-parameterized1 leaky variant, and variant with dynamic parametrization during learning confuses two distinct things:
-
-- The comparison between ReLU with the leaky variant is closely  related to whether there is a need, in the particular ML case at hand,  to avoid saturation — Saturation is thee loss of signal to either zero  gradient2 or the dominance of chaotic noise arising from digital rounding3.
-- The comparison between training-dynamic activation (called *parametric* in the literature) and training-static activation must be based on  whether the non-linear or non-smooth characteristics of activation have  any value related to the rate of convergence4.
-
-The reason ReLU is never parametric is that to make it so would be  redundant.  In the negative domain, it is the constant zero.  In the  non-negative domain, its derivative is constant.  Since the activation  input vector is already attenuated with a vector-matrix product (where  the matrix, cube, or hyper-cube contains the attenuation parameters)  there is no useful purpose in adding a parameter to vary the constant  derivative for the non-negative domain.
-
-When there is curvature in the activation, it is no longer true that  all the coefficients of activation are redundant as parameters.  Their  values may considerably alter the training process and thus the speed  and reliability of convergence.
-
-For substantially deep networks, the redundancy reemerges, and there  is evidence of this, both in theory and practice in the literature.
-
-- In algebraic terms, the disparity between ReLU and parametrically  dynamic activations derived from it approaches zero as the depth (in  number of layers) approaches infinity.
-- In descriptive terms, ReLU can accurately approximate functions with curvature5 if given a sufficient number of layers to do so.
-
-That is why the ELU variety, which is advantageous for averting the  saturation issues mentioned above for shallower networks is not used for deeper ones.
-
-So one must decided two things.
-
-- Whether parametric activation is helpful is often based on  experimentation with several samples from a statistical population.  But there is no need to experiment at all with it if the layer depth is  high.
-- Whether the leaky variant is of value has much to do with the  numerical ranges encountered during back propagation.  If the gradient  becomes vanishingly small during back propagation at any point during  training, a constant portion of the activation curve may be problematic.  In such a scase one of the smooth functions or leaky RelU with it's  two non-zero slopes may provide adequate solution.
-
-In summary, the choice is never a choice of convenience.
-
-
-
-
-
-
-
-# TODO
-
-- Explicar iomplementação dos modelos (discriminador / gerador) 
-- RELU vs LeakyRELU A fazer
-- ADAM vs RMSDrop A fazer 
-- Introducao
-- Acabar artiifiaal netowrks teorica
+> \- A seção 2.2.1 não tem nada
+>
+> \- na seção 3.2.2 devias adicionar um par de ilustrações introdutórias das imagens utilizadas. Talvez uma imagem em grande, onde assinalas as regiões (pálpebras, pestanas, íris,…) de onde provêm os labels utilizados
+>
+> \- A resolução de algumas figuras está muito baixa, o que as torna quase ilegíveis. (Exemplo, figura 3.1)
+>
+> \- na equação 3.1 e nas restantes, tens que descrever todos os termos que aparecem. Por exemplo, falta descrever p(x)
+>
+> \- Na seção 4.2.1 está uma referência quebrada
+>
+> \- Na seção 4.4.1 a rede ainda deveria ser deixada mais tempo a treinar, porque ainda iria melhorar a taxa de acerto.
+>
+> 
