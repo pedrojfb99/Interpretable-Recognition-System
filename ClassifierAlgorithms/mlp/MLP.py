@@ -93,7 +93,7 @@ history = mlp.fit(
     [X_train,X_train_aux],
     np.asarray(Y_train),
     batch_size=32,
-    epochs=200,
+    epochs=5000,
     validation_data=([X_test,X_test_aux],np.asarray(Y_test) )
 
 )
