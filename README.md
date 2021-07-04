@@ -25,13 +25,4 @@ source, **we consider the periocular region** , in order to obtain understandabl
 descriptions of: 1) the eyebrows (shape); 2) the eyelids (shape); 3) the iris (color) and
 4) the skin (color and texture).
 
-**Figure 2** : **Schematic perspective of a the framework designed for this work
-proposal:** Generative Adversarial Network-based solution for developing
-interpretable periocular recognition systems. A generator **G** receives human-
-understandable descriptions of a biometric sample and is responsible for generating
-synthetic samples that accord such descriptions. The discriminator **D** analyzes pairs of
-biometric samples and human-understandable descriptions and should discriminate
-between the genuine samples with according descriptions and the remaining types of
-data (either synthetic samples or genuine samples with wrong descriptions).
-
 
