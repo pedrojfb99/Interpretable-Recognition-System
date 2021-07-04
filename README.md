@@ -3,7 +3,7 @@
 
 ## Advisor: Hugo Proença
 
-## 1 Objetives
+## Objectives
 
 “ Interpretability ” is the key concept in this work proposal. Having interpretable
 systems is of maximum importance for many fields, which has been motivating
