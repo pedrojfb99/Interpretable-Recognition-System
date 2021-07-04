@@ -5,25 +5,19 @@
 
 ## 1 Objetives
 
-```
 “ Interpretability ” is the key concept in this work proposal. Having interpretable
 systems is of maximum importance for many fields, which has been motivating
 growing concerns in the research community. Also, the increasingly larger quantities
 of data available lead to models of increasingly higher complexity, which responses
 are extremely hard to be interpreted by humans. In this context, neural-based methods
 are considered a special case of interest, due to this lack of interpretability.
-```
-```
+
 Henceforth, this work proposal aims at designing/developing one solution for
 interpretable biometric recognition , which will make easier the application of
 biometrics to forensics, by allowing to explain the reasons that sustain a match / non-
 match response. This way, the work lays at the intersection of two important scientific
 research topics: 1) biometric recognition; and 2) human-machine interaction.
-```
-```
-Figure 1 : Illustration of the main goal in this Project: develop one system able to
-“explain” the reasons that justify one recognition reponse, for a biometric recognizer.
-```
+
 
 In particular, **the work considers to use Generative Adversarial Frameworks
 (GANs)** as the main framework for producing interpretable responses. As biometric
